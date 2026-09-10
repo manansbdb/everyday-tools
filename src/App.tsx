@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
-import { useI18n } from './i18n/I18nContext'
+import { useI18n } from './i18n/useI18n'
 import { ImageCompressTool } from './tools/ImageCompressTool'
 import { ImageConvertTool } from './tools/ImageConvertTool'
 import { PdfTool } from './tools/PdfTool'
@@ -19,7 +19,7 @@ type ToolId =
   | 'money'
 
 const TOOL_META: { id: Exclude<ToolId, 'home'>; icon: string }[] = [
-  { id: 'imageCompress', icon: '🗜️' },
+  { id: 'imageCompress', icon: '🗂️' },
   { id: 'imageConvert', icon: '🔄' },
   { id: 'pdf', icon: '📄' },
   { id: 'qr', icon: '▣' },
