@@ -26,6 +26,7 @@
   <text x="80" y="260" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" fill="#cbd5e1">Images · PDFs · QR · Text · Money — no uploads, no ads, no trackers.</text>
   <rect x="80" y="300" rx="14" ry="14" width="280" height="52" fill="#022c22" stroke="#4ade80" stroke-width="2"/>
   <text x="220" y="334" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="600" fill="#bbf7d0">Run locally · MIT · EN/PT</text>
+  <!-- tool cards -->
   <g filter="url(#soft)">
     <g transform="translate(760,120)">
       <rect width="170" height="140" rx="18" fill="url(#card)" stroke="#67e8f9" stroke-opacity="0.5"/>
