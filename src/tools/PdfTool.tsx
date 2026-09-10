@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { FileDropzone } from '../components/common/FileDropzone'
 import { Alert } from '../components/common/Alert'
-import { useI18n } from '../i18n/I18nContext'
+import { useI18n } from '../i18n/useI18n'
 import { LIMITS } from '../utils/limits'
 import { downloadBlob, formatBytes } from '../utils/format'
 import { bytesToBlob } from '../utils/blob'
