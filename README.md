@@ -2,6 +2,8 @@
 
 Free, privacy-first browser utilities for non-technical users. **All processing happens on your device** — no uploads, no ads, no trackers, no signup.
 
+**Live demo (free GitHub Pages):** https://manansbdb.github.io/everyday-tools/
+
 **Português:** see [README.pt.md](./README.pt.md)
 
 ## Tools
@@ -42,14 +44,16 @@ This project is static. You can host the `dist/` folder on any static host.
 
 ### GitHub Pages (free)
 
-GitHub Pages for public repos is free. This repo does **not** claim Pages is already live unless you enable it yourself.
+**Demo is live:** https://manansbdb.github.io/everyday-tools/
 
-1. `npm run build`
-2. Repo → **Settings → Pages**
-3. Source: **GitHub Actions** or deploy the `dist` folder (e.g. `peaceiris/actions-gh-pages` or branch `gh-pages`)
-4. Set Vite `base` if the site is served under `https://<user>.github.io/everyday-tools/` (already `base: './'` for relative assets)
+Served from the `gh-pages` branch (standard free public Pages). No paid plan required.
 
-No paid plans or billing required for standard public GitHub Pages.
+To redeploy after changes:
+
+```bash
+npm run build
+# publish contents of dist/ to the gh-pages branch
+```
 
 ## Size limits (soft, browser memory)
 
