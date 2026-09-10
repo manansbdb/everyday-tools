@@ -14,7 +14,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
+      # package-lock on main is currently out of sync with vite@8 peerOptional esbuild
+      # (^0.27||^0.28), so `npm ci` fails. Use `npm install` until the lockfile is repaired.
       - name: Install dependencies
         run: npm install
 

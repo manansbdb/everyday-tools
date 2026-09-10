@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useI18n } from '../../i18n/I18nContext'
+import { useI18n } from '../../i18n/useI18n'
 import { supportConfig } from '../../config/support'
 
 export function SupportSection() {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { generateQrDataUrl, generateQrSvg } from './QrTool'
+import { generateQrDataUrl, generateQrSvg } from './qr'
 
 describe('QR generation smoke', () => {
   it('creates PNG data URL', async () => {

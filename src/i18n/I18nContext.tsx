@@ -1,34 +1,12 @@
 import {
-  createContext,
   useCallback,
-  useContext,
   useEffect,
   useMemo,
   useState,
   type ReactNode,
 } from 'react'
-import { translations, type Locale, type TranslationKey } from './translations'
-
-const STORAGE_KEY = 'everyday-tools-locale'
-
-interface I18nContextValue {
-  locale: Locale
-  t: TranslationKey
-  setLocale: (locale: Locale) => void
-}
-
-const I18nContext = createContext<I18nContextValue | null>(null)
-
-function detectLocale(): Locale {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY)
-    if (saved === 'en' || saved === 'pt') return saved
-  } catch {
-    /* ignore */
-  }
-  const nav = typeof navigator !== 'undefined' ? navigator.language.toLowerCase() : 'en'
-  return nav.startsWith('pt') ? 'pt' : 'en'
-}
+import { translations, type Locale } from './translations'
+import { I18nContext, STORAGE_KEY, detectLocale } from './context'
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(detectLocale)
@@ -56,10 +34,4 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   )
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>
-}
-
-export function useI18n(): I18nContextValue {
-  const ctx = useContext(I18nContext)
-  if (!ctx) throw new Error('useI18n must be used within I18nProvider')
-  return ctx
 }

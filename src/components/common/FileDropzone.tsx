@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState, type DragEvent, type ChangeEvent } from 'react'
-import { useI18n } from '../../i18n/I18nContext'
+import { useI18n } from '../../i18n/useI18n'
 
 interface Props {
   accept: string

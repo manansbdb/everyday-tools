@@ -2,7 +2,7 @@ import { useState } from 'react'
 import imageCompression from 'browser-image-compression'
 import { FileDropzone } from '../components/common/FileDropzone'
 import { Alert } from '../components/common/Alert'
-import { useI18n } from '../i18n/I18nContext'
+import { useI18n } from '../i18n/useI18n'
 import { ACCEPTED_IMAGE_TYPES, LIMITS } from '../utils/limits'
 import { downloadBlob, formatBytes, stemAndExt } from '../utils/format'
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FileDropzone } from '../components/common/FileDropzone'
 import { Alert } from '../components/common/Alert'
-import { useI18n } from '../i18n/I18nContext'
+import { useI18n } from '../i18n/useI18n'
 import {
   ACCEPTED_IMAGE_TYPES,
   CONVERT_OUTPUT_FORMATS,

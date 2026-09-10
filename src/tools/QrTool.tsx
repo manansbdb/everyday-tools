@@ -1,26 +1,8 @@
 import { useState } from 'react'
-import QRCode from 'qrcode'
 import { Alert } from '../components/common/Alert'
-import { useI18n } from '../i18n/I18nContext'
+import { useI18n } from '../i18n/useI18n'
 import { downloadBlob } from '../utils/format'
-
-export async function generateQrDataUrl(text: string): Promise<string> {
-  return QRCode.toDataURL(text, {
-    errorCorrectionLevel: 'M',
-    margin: 2,
-    width: 512,
-    color: { dark: '#0f172a', light: '#ffffff' },
-  })
-}
-
-export async function generateQrSvg(text: string): Promise<string> {
-  return QRCode.toString(text, {
-    type: 'svg',
-    errorCorrectionLevel: 'M',
-    margin: 2,
-    color: { dark: '#0f172a', light: '#ffffff' },
-  })
-}
+import { generateQrDataUrl, generateQrSvg } from './qr'
 
 export function QrTool() {
   const { t } = useI18n()
