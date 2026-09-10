@@ -19,7 +19,7 @@ type ToolId =
   | 'money'
 
 const TOOL_META: { id: Exclude<ToolId, 'home'>; icon: string }[] = [
-  { id: 'imageCompress', icon: '🗂️' },
+  { id: 'imageCompress', icon: '🗜️' },
   { id: 'imageConvert', icon: '🔄' },
   { id: 'pdf', icon: '📄' },
   { id: 'qr', icon: '▣' },
