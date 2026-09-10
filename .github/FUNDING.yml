@@ -1,3 +1,12 @@
-# These are supported funding model platforms
-# github: [manansbdb]  # uncomment after enabling GitHub Sponsors (free to set up)
-custom: ["https://manansbdb.github.io/everyday-tools/"]
+# Free support links — no paid GitHub features required.
+#
+# GitHub Sponsors: activate once (free) at https://github.com/sponsors
+# Onboarding may ask Matheus for tax/payout details. Until Sponsors is
+# live on this account, do NOT uncomment `github:` (it would 404).
+#
+# No income is promised. Support is optional and never gated behind paywalls.
+
+# github: [manansbdb]
+custom:
+  - "https://manansbdb.github.io/everyday-tools/"
+  - "https://github.com/manansbdb#support--apoio"
